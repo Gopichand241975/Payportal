@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Dashboard | Secure Payment Portal</title>
+  <meta name="description" content="Secure and simple payment portal. Pay via QR code or UPI phone number. Fast, trusted, and professional." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header" role="banner">
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <div class="logo-group">
+      <div class="logo-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="5" width="20" height="14" rx="3"/>
+          <line x1="2" y1="10" x2="22" y2="10"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">PayPortal</span>
+        <span class="logo-sub">Payment Services</span>
+      </div>
+    </div>
+
+    <!-- Centre title (hidden on small screens via CSS) -->
+    <span class="header-center">Payment Dashboard</span>
+
+    <!-- Secure badge -->
+    <div class="secure-badge" aria-label="Secure payment connection active">
+      <span class="secure-dot"></span>
+      Secure Payment
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ============================================================
+     PAGE CONTENT
+============================================================ -->
+<main class="page" role="main">
+
+  <!-- ── HERO BANNER ─────────────────────────────────────── -->
+  <section class="hero-banner" aria-label="Payment portal introduction">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Trusted Payment Portal</p>
+      <h1 class="hero-h1">Simple, Secure<br>Payments</h1>
+      <p class="hero-desc">
+        Pay quickly using our UPI QR code or registered phone number.
+        No hidden steps — just a fast, seamless payment experience.
+      </p>
+      <div class="hero-pills">
+        <span class="hero-pill">&#10003; UPI Supported</span>
+        <span class="hero-pill">&#10003; Instant Transfer</span>
+        <span class="hero-pill">&#10003; 256-bit Encrypted</span>
+      </div>
+    </div>
+    <div class="hero-graphic" aria-hidden="true">
+      <div class="hero-shield">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+             stroke="rgba(255,255,255,.8)" stroke-width="1.5"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── MAIN PAYMENT CARD ───────────────────────────────── -->
+  <section aria-labelledby="payment-card-title">
+    <article class="payment-card animate-on-scroll">
+
+      <!-- Card header -->
+      <div class="payment-card-header">
+        <h2 id="payment-card-title">Make a Payment</h2>
+        <p>Choose your preferred payment method below</p>
+      </div>
+
+      <div class="payment-methods-grid">
+
+        <!-- ────────────── A. QR CODE ─────────────────── -->
+        <div class="qr-section" aria-label="QR code payment method">
+
+          <span class="method-label">
+            <span class="method-label-dot"></span>
+            UPI / QR Payment
+          </span>
+
+          <!-- QR frame with corner decorators -->
+          <div class="qr-frame-wrapper" role="img" aria-label="Payment QR code">
+            <div class="qr-inner-corners">
+              <div class="qr-image-area">
+
+                <!--
+                  ══════════════════════════════════════════════
+                  REPLACE THIS BLOCK WITH YOUR QR CODE IMAGE
+                  ──────────────────────────────────────────────
+                  <img src="qr-code.png" alt="UPI Payment QR Code" />
+                  ══════════════════════════════════════════════
+                  The placeholder SVG below is shown until then.
+                -->
+                <div class="qr-placeholder" id="qr-placeholder">
+                  <svg width="130" height="130" viewBox="0 0 100 100"
+                       fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Top-left finder -->
+                    <rect x="8"  y="8"  width="26" height="26" rx="3" fill="#0f1c35" opacity=".12"/>
+                    <rect x="13" y="13" width="16" height="16" rx="1.5" fill="#0f1c35" opacity=".3"/>
+                    <rect x="17" y="17" width="8"  height="8"  rx="1"  fill="#0f1c35"/>
+                    <!-- Top-right finder -->
+                    <rect x="66" y="8"  width="26" height="26" rx="3" fill="#0f1c35" opacity=".12"/>
+                    <rect x="71" y="13" width="16" height="16" rx="1.5" fill="#0f1c35" opacity=".3"/>
+                    <rect x="75" y="17" width="8"  height="8"  rx="1"  fill="#0f1c35"/>
+                    <!-- Bottom-left finder -->
+                    <rect x="8"  y="66" width="26" height="26" rx="3" fill="#0f1c35" opacity=".12"/>
+                    <rect x="13" y="71" width="16" height="16" rx="1.5" fill="#0f1c35" opacity=".3"/>
+                    <rect x="17" y="75" width="8"  height="8"  rx="1"  fill="#0f1c35"/>
+                    <!-- Data modules -->
+                    <rect x="42" y="8"  width="6" height="6" rx="1" fill="#2563eb" opacity=".7"/>
+                    <rect x="50" y="8"  width="6" height="6" rx="1" fill="#0f1c35"/>
+                    <rect x="8"  y="42" width="6" height="6" rx="1" fill="#0f1c35"/>
+                    <rect x="8"  y="50" width="6" height="6" rx="1" fill="#2563eb" opacity=".6"/>
+                    <rect x="42" y="42" width="16" height="16" rx="3" fill="#2563eb" opacity=".1"/>
+                    <rect x="46" y="46" width="8"  height="8"  rx="1.5" fill="#2563eb"/>
+                    <rect x="66" y="42" width="6" height="6" rx="1" fill="#0f1c35"/>
+                    <rect x="74" y="42" width="6" height="6" rx="1" fill="#0f1c35" opacity=".5"/>
+                    <rect x="66" y="50" width="6" height="6" rx="1" fill="#2563eb" opacity=".7"/>
+                    <rect x="74" y="50" width="6" height="6" rx="1" fill="#0f1c35"/>
+                    <rect x="42" y="66" width="6" height="6" rx="1" fill="#0f1c35" opacity=".5"/>
+                    <rect x="50" y="66" width="6" height="6" rx="1" fill="#2563eb"/>
+                    <rect x="58" y="66" width="6" height="6" rx="1" fill="#0f1c35"/>
+                    <rect x="66" y="74" width="6" height="6" rx="1" fill="#2563eb" opacity=".5"/>
+                    <rect x="82" y="42" width="6" height="6" rx="1" fill="#2563eb" opacity=".6"/>
+                    <rect x="82" y="50" width="6" height="6" rx="1" fill="#0f1c35" opacity=".4"/>
+                  </svg>
+                  <p class="qr-placeholder-text">Your QR Code Here</p>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /qr-frame-wrapper -->
+
+          <div style="text-align:center">
+            <h3 class="qr-section-title">Scan &amp; Pay</h3>
+            <p class="qr-section-desc">
+              Scan this QR code using any UPI-enabled payment app to
+              complete your payment instantly.
+            </p>
+          </div>
+
+          <!--
+            Update href with your real UPI ID:
+            upi://pay?pa=YOURID@upi&pn=PayPortal&cu=INR
+          -->
+          <a id="open-upi-btn"
+             href="upi://pay?pa=YOURUPI@upi&amp;pn=PayPortal&amp;cu=INR"
+             class="btn btn-primary"
+             aria-label="Open UPI payment app">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Open UPI App
+          </a>
+
+        </div><!-- /qr-section -->
+
+
+        <!-- ────────────── B. PHONE NUMBER ────────────── -->
+        <div class="phone-section" aria-label="Phone number payment method">
+
+          <span class="method-label">
+            <span class="method-label-dot" style="background:var(--teal)"></span>
+            Phone Number Payment
+          </span>
+
+          <h3 class="phone-section-title">Pay via Phone Number</h3>
+          <p class="phone-section-desc">
+            Use this registered UPI phone number in your payment app
+            to transfer funds directly.
+          </p>
+
+          <!-- Phone display card -->
+          <div class="phone-display-card">
+            <p class="phone-upi-label">UPI Registered Number</p>
+
+            <!--
+              ══════════════════════════════════════════════
+              REPLACE THE TEXT BELOW WITH YOUR PHONE NUMBER
+              Example:  +91 98765 43210
+              ══════════════════════════════════════════════
+            -->
+            <p class="phone-number-display" id="phone-number-text">
+              +91 XXXXX XXXXX
+            </p>
+
+            <span class="phone-verified-badge" aria-label="Verified UPI number">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="3"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Verified
+            </span>
+          </div>
+
+          <!-- Copy button -->
+          <div>
+            <button id="copy-btn"
+                    class="btn btn-copy"
+                    onclick="copyPhoneNumber()"
+                    aria-label="Copy phone number to clipboard"
+                    style="width:100%">
+              <svg id="copy-icon" width="16" height="16" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2.5"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span id="copy-btn-text">Copy Number</span>
+            </button>
+
+            <div class="copy-feedback" id="copy-feedback"
+                 role="status" aria-live="polite">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="3"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Number copied to clipboard!
+            </div>
+          </div>
+
+          <!-- Mini instructions -->
+          <div class="phone-instructions-mini" role="note">
+            <strong style="color:var(--navy);font-size:12px;display:block;margin-bottom:6px;
+                           text-transform:uppercase;letter-spacing:.5px;">How to use</strong>
+            Open any UPI app (GPay, PhonePe, Paytm, etc.) &rarr; select
+            &ldquo;Send Money&rdquo; &rarr; enter this phone number &rarr; enter the amount
+            &rarr; confirm with your UPI PIN.
+          </div>
+
+        </div><!-- /phone-section -->
+
+      </div><!-- /payment-methods-grid -->
+    </article>
+  </section>
+
+
+  <!-- ── 3-STEP INSTRUCTIONS ─────────────────────────────── -->
+  <section class="steps-section" aria-labelledby="steps-title">
+    <div>
+      <p class="section-label">How it works</p>
+      <h2 class="section-title" id="steps-title">3 Simple Steps</h2>
+      <p class="section-sub">Complete your payment in under a minute</p>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step-card animate-on-scroll">
+        <div class="step-number" aria-hidden="true">01</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Open your UPI payment app</h3>
+        <p class="step-desc">Launch GPay, PhonePe, Paytm, BHIM, or any UPI-supported app on your phone.</p>
+      </div>
+
+      <div class="step-card animate-on-scroll">
+        <div class="step-number" aria-hidden="true">02</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Scan QR or enter the number</h3>
+        <p class="step-desc">Use the scanner to scan the QR code, or manually enter the payment phone number shown above.</p>
+      </div>
+
+      <div class="step-card animate-on-scroll">
+        <div class="step-number" aria-hidden="true">03</div>
+        <div class="step-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+        </div>
+        <h3 class="step-title">Enter amount &amp; complete</h3>
+        <p class="step-desc">Type the exact payment amount, verify the recipient name, and confirm with your UPI PIN.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ── AFTER-PAYMENT INFO CARD ──────────────────────────── -->
+  <div class="info-card animate-on-scroll" role="note" aria-label="Post-payment information">
+    <div class="info-card-icon" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="8"  x2="12" y2="12"/>
+        <line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+    </div>
+    <div class="info-card-body">
+      <h3>After Completing the Payment</h3>
+      <p>
+        Please keep your payment confirmation screenshot or transaction ID for your records.
+        Your bank or UPI app will send a confirmation SMS / notification upon successful transfer.
+        Contact us if you face any issues with your transaction.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ── SECURITY SECTION ─────────────────────────────────── -->
+  <section class="security-section" aria-labelledby="security-title">
+    <div>
+      <p class="section-label">Security &amp; Trust</p>
+      <h2 class="section-title" id="security-title">Your Payment is Safe</h2>
+      <p class="section-sub">We follow strict security standards to protect every transaction</p>
+    </div>
+
+    <div class="security-pills">
+
+      <div class="security-pill animate-on-scroll">
+        <div class="security-pill-icon blue" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="security-pill-text">
+          <h4>Secure Payment</h4>
+          <p>All payments are processed through RBI-regulated UPI infrastructure with end-to-end encryption.</p>
+        </div>
+      </div>
+
+      <div class="security-pill animate-on-scroll">
+        <div class="security-pill-icon green" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <div class="security-pill-text">
+          <h4>Data Protected</h4>
+          <p>Your payment information is handled securely and is never stored or shared with third parties.</p>
+        </div>
+      </div>
+
+      <div class="security-pill animate-on-scroll">
+        <div class="security-pill-icon red" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9"  x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
+        <div class="security-pill-text">
+          <h4>Important Warning</h4>
+          <p>Never share your UPI PIN, OTP, or banking password with anyone — including our support team.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main><!-- /page -->
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+
+    <div class="footer-top">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="logo-group" style="margin-bottom:12px">
+          <div class="logo-icon"
+               style="background:linear-gradient(135deg,rgba(37,99,235,.7),rgba(14,165,233,.7))"
+               aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="3"/>
+              <line x1="2" y1="10" x2="22" y2="10"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">PayPortal</span>
+            <span class="logo-sub">Payment Services</span>
+          </div>
+        </div>
+        <p class="footer-tagline">
+          Fast, secure, and reliable UPI payment solutions.
+          Trusted by professionals and businesses alike.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <!-- Replace with your actual contact info -->
+          <li><a href="mailto:support@payportal.com">support@payportal.com</a></li>
+          <li><a href="tel:+910000000000">+91 XXXXX XXXXX</a></li>
+          <li><a href="#">9 am &ndash; 6 pm IST</a></li>
+          <li><a href="#">Monday &ndash; Saturday</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#" id="terms-link">Terms &amp; Conditions</a></li>
+          <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+          <li><a href="#" id="refund-link">Refund Policy</a></li>
+          <li><a href="#" id="contact-link">Contact Support</a></li>
+        </ul>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <hr class="footer-divider" />
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; <span id="footer-year"></span> PayPortal Payment Services.
+        All rights reserved.
+      </p>
+      <div class="footer-secure">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        256-bit SSL Secured &nbsp;&middot;&nbsp; UPI Compliant
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- JavaScript (loaded at bottom for performance) -->
+<script src="script.js"></script>
+
+</body>
+</html>
